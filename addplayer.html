@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <style>
+            .mydiv{
+                width: 620px;
+                height: 50px;
+                padding: 5px;
+                margin: 5px;
+                background-color: rgb(105, 90, 247);
+            }
+            .mydiv1{
+                width: 620px;
+                height: 420px;
+                padding: 5px;
+                margin: 5px;
+                background-color: rgb(165, 217, 247);
+            }
+            .mydiv2{
+                width: 620px;
+                height: 50px;
+                padding: 5px;
+                margin: 5px;
+                background-color: rgb(115, 101, 240);
+            }
+            .required:after{
+                content:"*";
+                color: red;
+                margin-right: 70px;
+            }
+            .required{
+                font-size: 20px;
+                color: #708090;
+            }
+            .required1{
+                font-size: 20px;
+                color: #708090;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center>
+        <div class="mydiv"> <h2 style="color:white;"> Player Details </h2>
+
+        </div>
+        <div class="mydiv1">
+            <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label class="required" for=""> <i>Name</i></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Name" placeholder="Enter your name" autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""><i>DOB</i></label></td>
+                    <td>
+                        <input type="date" id="DOB" placeholder="DD/MM/YY" pattern="\d{1,2}^d{1,2}^d{4}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label  class="required" for=""><i>AGE</i> </label></td>
+                        <td><input type="text" id="Age" placeholder="Enter your Age"></td>
+                </tr>
+                <tr>
+                    <td><label  class="required" for=""><i>Email ID</i></label></td>
+                    <td><input type="email" id="Email" placeholder="abc12@xyz.com" pattern="[a-z0-9._%+-]+@[a-z0-9,-]+\[a-z][2,4}$"></td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""> <i>Country</i></label></td>
+                    <td><select name="Country" id="Country">
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""><i>Skill</i></label></td>
+                    <td><input type="checkbox" name="skill" id="skill"> Batting
+                    <input type="checkbox"> Bowling</td>
+                </tr>
+                <tr>
+                    <td><label class="required1" for=""> <i>Bat Style</i></label></td>
+                    <td><input type="radio">Right Handed
+                        <input type="radio">Left Handed
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required1" for=""> <i>Bowl Style</i></label></td>
+                    <td><input type="radio">Right Handed
+                        <input type="radio">Left Handed
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""><i>Matches</i></label></td>
+                    <td><input type="text" placeholder="Matches Played"></td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""><i>Runs</i></label></td>
+                    <td><input type="text" placeholder="Total runs scored"></td>
+                </tr>
+                <tr>
+                    <td><label class="required" for=""><i>Wickets</i></label></td>
+                    <td><input type="text" placeholder="wickets"></td>
+                </tr>
+                <tr>
+                    <td><label class="required1" for=""><i>Achievements</i></label></td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Your Achievements in Cricket"></textarea>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        <div class="mydiv2">
+            <table>
+                <tr>
+                    <td><button  type="submit" form="nameform" value="Submit">Submit</button>
+                        <button  type="reset" form="nameform" value="reset">Reset</button></td>
+                </tr>
+            </table>
+
+
+        </div>
+    </center>
+    </body>
+</html>
